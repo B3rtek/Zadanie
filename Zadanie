@@ -1,22 +1,22 @@
 #include <iostream>
 using namespace std;
 int main()
-{ double liczba10; // liczba z ułamkiem dziesiętnym
+{ double liczba10; 
  double ulamek;
     int n;
     int t[1]={0};
-    int u[10]={0}; //na ulamek binarny
+    int u[10]={0}; 
     int i=7;
 cout<<"Podaj liczbe";
-cin>>liczba10; //wczytanie liczby z ulamkiem
+cin>>liczba10; 
 //cin>>n;
-n=(int) liczba10; //pobieramy czesc calkowita
-ulamek=liczba10 - n; // czesc ulamkowa
-while(n>0){ //petla do czesci calkowitej
+n=(int) liczba10; 
+ulamek=liczba10 - n; 
+while(n>0){ 
     t[i]=n%2;
     n=n/2;
     i--;}
-for(int i=7; i<10; i++){ //petla dla czesci ulamkowej
+for(int i=7; i<10; i++){ 
     ulamek=2*ulamek;
 if(ulamek>=1) {u[i]=1; ulamek=ulamek-1;}
     else u[i]=0;
